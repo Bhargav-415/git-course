@@ -1,0 +1,13 @@
+CREATING GIT AND ADDING IT TO THE LOCAL REPOSITORY
+
+-->Download the git and setup the Git in the local machine.
+-->Create a dirictory where you want to work on your project.
+-->Use GIT INIT command to initialize the new GIT repo in the dirictory.
+-->Write your code or what ever your working on in that dirictory.
+-->Use GIT ADD command to add the code to the staging area, it adds the files and also tracks the files changes.
+-->Now use the GIT COMMIT command to save the staged changes to the local repo, It also gives the snapshots of all the details.
+
+PUSHNING THE FILE TO THE LOCAL REPOSITORY
+
+-->Use the command GIT PUSH ORIGIN MAIN it uploads from local repo main branch to remote repo main branch named origin all to the main branch.
+-->origin” is just a name (alias) that points to the URL or SSH address of the remote repository you copied or used when you created or cloned the repository
