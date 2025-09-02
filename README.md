@@ -1,1 +1,1 @@
-#git course demo
+Welcome to GIT
