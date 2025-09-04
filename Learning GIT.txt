@@ -11,3 +11,9 @@ PUSHNING THE FILE TO THE LOCAL REPOSITORY
 
 -->Use the command GIT PUSH ORIGIN MAIN it uploads from local repo main branch to remote repo main branch named origin all to the main branch.
 -->origin” is just a name (alias) that points to the URL or SSH address of the remote repository you copied or used when you created or cloned the repository
+
+LEARNING GIT TAG
+
+-->Git tag is like an important spot in your project that referes to the important bug fixes and version releases 
+-->When tags are created they stick to the same commit and it cannot be changed
+-->There are two types of tags annoated tags and lightweight tags, annoated tag has more details about the version and lightweight is kind of private bookmarks 
