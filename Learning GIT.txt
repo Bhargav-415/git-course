@@ -17,3 +17,9 @@ LEARNING GIT TAG
 -->Git tag is like an important spot in your project that referes to the important bug fixes and version releases 
 -->When tags are created they stick to the same commit and it cannot be changed
 -->There are two types of tags annoated tags and lightweight tags, annoated tag has more details about the version and lightweight is kind of private bookmarks 
+
+
+GIT CLONING
+
+--> It makes a complete copy of existing files in the local computer from the remote repo so that we can work on the project on local machine.
+
