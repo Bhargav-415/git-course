@@ -16,7 +16,27 @@ LEARNING GIT TAG
 
 -->Git tag is like an important spot in your project that referes to the important bug fixes and version releases 
 -->When tags are created they stick to the same commit and it cannot be changed
--->There are two types of tags annoated tags and lightweight tags, annoated tag has more details about the version and lightweight is kind of private bookmarks 
+-->There are two types of tags annoated tags and lightweight tags, annoated tag has more details about the version and lightweight is kind of private bookmarks.
+   LIGHTWEIGHT TAG
+    git tag v1.0                      # Tag current commit
+    git tag v1.0 9fceb02             # Tag specific commit
+   ANNOATED TAG 
+    git tag -a v1.0 -m "Version 1.0 release"
+    git tag -a v1.0 9fceb02 -m "Version 1.0 release"  # Tag specific commit
+   VIEWING TAGS 
+    git tag                           # List all tags alphabetically
+    git tag -l "v1.*"                # List tags matching pattern
+    git tag --sort=-version:refname   # Sort by version numbers
+    git show v1.0                     # Show tag details and commit
+    git tag -v v1.0                   # Verify signed tag
+   PUSHING TAG
+    git push origin v1.0              # Push specific tag
+    git push origin --tags            # Push all tags
+    git push --follow-tags            # Push commits and reachable tags
+   DELETING TAG
+    git tag -d v1.0                   # Delete local tag
+    git push origin --delete v1.0     # Delete from remote
+    git push origin :refs/tags/v1.0   # Alternative syntax
 
 
 GIT CLONING
