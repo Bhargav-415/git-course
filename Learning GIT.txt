@@ -23,3 +23,9 @@ GIT CLONING
 
 --> It makes a complete copy of existing files in the local computer from the remote repo so that we can work on the project on local machine.
 
+
+ABOUT BRANCHING
+
+-->Branching helps us to move away from the main code to work on the new features to add to the main code 
+--> If it successfully runs we can add it to the main code 
+
