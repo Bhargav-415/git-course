@@ -1,74 +1,11 @@
-CREATING GIT AND ADDING IT TO THE LOCAL REPOSITORY
+WORKING OF GIT BRANCHES
+--> It is kind of a life saver working on new features that will not affect the main branch, by creating a branch.
+--> Each branch is an independent line of development, allowing you to experiment or fix bugs without disturbing the main codebase.
+--> You can create multiple branches for different features or bug fixes and merge them back when ready.
+--> Branches make collaboration easier, as each contributor can work on their own branch and later integrate changes.
 
--->Download the git and setup the Git in the local machine.
--->Create a dirictory where you want to work on your project.
--->Use GIT INIT command to initialize the new GIT repo in the dirictory.
--->Write your code or what ever your working on in that dirictory.
--->Use GIT ADD command to add the code to the staging area, it adds the files and also tracks the files changes.
--->Now use the GIT COMMIT command to save the staged changes to the local repo, It also gives the snapshots of all the details.
-
-PUSHNING THE FILE TO THE LOCAL REPOSITORY
-
--->Use the command GIT PUSH ORIGIN MAIN it uploads from local repo main branch to remote repo main branch named origin all to the main branch.
--->origin” is just a name (alias) that points to the URL or SSH address of the remote repository you copied or used when you created or cloned the repository
-
-LEARNING GIT TAG
-
--->Git tag is like an important spot in your project that referes to the important bug fixes and version releases 
--->When tags are created they stick to the same commit and it cannot be changed
--->There are two types of tags annoated tags and lightweight tags, annoated tag has more details about the version and lightweight is kind of private bookmarks.
-   LIGHTWEIGHT TAG
-    git tag v1.0                      # Tag current commit
-    git tag v1.0 9fceb02             # Tag specific commit
-   ANNOATED TAG 
-    git tag -a v1.0 -m "Version 1.0 release"
-    git tag -a v1.0 9fceb02 -m "Version 1.0 release"  # Tag specific commit
-   VIEWING TAGS 
-    git tag                           # List all tags alphabetically
-    git tag -l "v1.*"                # List tags matching pattern
-    git tag --sort=-version:refname   # Sort by version numbers
-    git show v1.0                     # Show tag details and commit
-    git tag -v v1.0                   # Verify signed tag
-   PUSHING TAG
-    git push origin v1.0              # Push specific tag
-    git push origin --tags            # Push all tags
-    git push --follow-tags            # Push commits and reachable tags
-   DELETING TAG
-    git tag -d v1.0                   # Delete local tag
-    git push origin --delete v1.0     # Delete from remote
-    git push origin :refs/tags/v1.0   # Alternative syntax
-
-
-GIT CLONING
-
---> It makes a complete copy of existing files in the local computer from the remote repo so that we can work on the project on local machine.
-
-
-ABOUT BRANCHING
-
--->Branching helps us to move away from the main code to work on the new features to add to the main code 
---> If it successfully runs we can add it to the main code
---> We can use git checkout or git switch to create a branch 
---> Basic commands in branching  
-    CREATING BRANCHES
-    git branch feature-login          # Create a new branch
-    git checkout feature-login        # Switch to the branch
-    git checkout -b feature-login     # Create and switch in one command
-    git switch -c feature-login       # Modern alternative to checkout -b
-
-    VIEWING BRANCHES 
-    git branch                        # List local branches
-    git branch -r                     # List remote branches
-    git branch -a                     # List all branches
-
-    SWITCHING BRANCHES 
-    git checkout main                 # Switch to main branch
-    git switch main                   # Modern alternative
-
-    DELETING BRANCHES
-    git branch -d feature-login       # Delete merged branch
-    git branch -D feature-login       # Force delete unmerged branch
-
-    MERGING BRANCHES
-    git checkout main                 # Switch to main
-    git merge feature-login           # Merge feature-login into main
+ABOUT PARENT COMMITS
+--> In Git, every commit (except the first) has one or more parent commits.
+--> The parent commit is the previous commit that your current commit builds upon.
+--> In a normal commit, there is a single parent; in a merge commit, there are two or more parents (representing the branches being merged).
+--> Parent commits help Git track the history and relationships between changes, making it possible to visualize and manage branches and merges.
