@@ -27,5 +27,28 @@ GIT CLONING
 ABOUT BRANCHING
 
 -->Branching helps us to move away from the main code to work on the new features to add to the main code 
---> If it successfully runs we can add it to the main code 
+--> If it successfully runs we can add it to the main code
+--> We can use git checkout or git switch to create a branch 
+--> Basic commands in branching  
+    CREATING BRANCHES
+    git branch feature-login          # Create a new branch
+    git checkout feature-login        # Switch to the branch
+    git checkout -b feature-login     # Create and switch in one command
+    git switch -c feature-login       # Modern alternative to checkout -b
 
+    VIEWING BRANCHES 
+    git branch                        # List local branches
+    git branch -r                     # List remote branches
+    git branch -a                     # List all branches
+
+    SWITCHING BRANCHES 
+    git checkout main                 # Switch to main branch
+    git switch main                   # Modern alternative
+
+    DELETING BRANCHES
+    git branch -d feature-login       # Delete merged branch
+    git branch -D feature-login       # Force delete unmerged branch
+
+    MERGING BRANCHES
+    git checkout main                 # Switch to main
+    git merge feature-login           # Merge feature-login into main
