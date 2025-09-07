@@ -1,0 +1,11 @@
+WORKING OF GIT BRANCHES
+--> It is kind of a life saver working on new features that will not affect the main branch, by creating a branch.
+--> Each branch is an independent line of development, allowing you to experiment or fix bugs without disturbing the main codebase.
+--> You can create multiple branches for different features or bug fixes and merge them back when ready.
+--> Branches make collaboration easier, as each contributor can work on their own branch and later integrate changes.
+
+ABOUT PARENT COMMITS
+--> In Git, every commit (except the first) has one or more parent commits.
+--> The parent commit is the previous commit that your current commit builds upon.
+--> In a normal commit, there is a single parent; in a merge commit, there are two or more parents (representing the branches being merged).
+--> Parent commits help Git track the history and relationships between changes, making it possible to visualize and manage branches and merges.
