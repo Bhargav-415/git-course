@@ -97,3 +97,10 @@ GIT STASH
 --> Basically it helps you to save the unfinished work and helps to save it while swithing the different branches and can start resuming the work after the work done on the second branch.
 -->By default, git stash does not stash brand new files you haven't added to Git yet (untracked files). If you want to include untracked files in your stash, use the -u flag.
         git stash -u or git stash --include untracked files.
+
+
+GIT FORKING 
+
+-->Fork is not a git command we cannot find fork in command line, it is a feature in git hosting platforms
+-->A fork is a personal server side copy of another user or organization. 
+-->when we dont have the license or authorization to make or contribute any changes in the code,forking allow us to experiment and add new features or contribute to the project by adding to our own repository
