@@ -104,3 +104,12 @@ GIT FORKING
 -->Fork is not a git command we cannot find fork in command line, it is a feature in git hosting platforms
 -->A fork is a personal server side copy of another user or organization. 
 -->when we dont have the license or authorization to make or contribute any changes in the code,forking allow us to experiment and add new features or contribute to the project by adding to our own repository
+
+
+GIT PULL REQUEST
+
+-->A Pull Request is a formal way to propose changes to a software project. 
+-->It is a request you send to the project maintainers asking them to "pull" your committed changes from your branch into their main or development branch.
+--> The pull request helps a lot in code review,discussion and project history why the changes are made and who changed it and who approved it.
+-->Integration of fork and pull request opens new doors and works like a magic. Most importantly it helps to contribute new features and update new 
+    features on the repository we dont have authorization to work on.
