@@ -88,3 +88,12 @@ GIT TIME TRAVEL
 -->When ever we do a git commit it produces a snapshot of the project which is in hash form by using this snapshot we can go back by using command
     git checkout <snapshot>
 --> It has the capability observing the past,reverting the past and resetting the past.
+
+
+GIT STASH
+
+-->It takes all the mobifications the are made in the working dir and saves them in separate storage area which will not effect the file we are working on.
+--> Due to the stashing method we can switch between the branches and we can manage the work whitout disturbing the mobifications
+--> Basically it helps you to save the unfinished work and helps to save it while swithing the different branches and can start resuming the work after the work done on the second branch.
+-->By default, git stash does not stash brand new files you haven't added to Git yet (untracked files). If you want to include untracked files in your stash, use the -u flag.
+        git stash -u or git stash --include untracked files.
