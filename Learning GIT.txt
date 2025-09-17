@@ -73,3 +73,10 @@ ABOUT BRANCHING
     git checkout main                 # Switch to main
     git merge feature-login           # Merge feature-login into main
 
+
+GIT MERGE CONFLICT
+
+-->A Git merge conflict is an event that occurs when Git is unable to automatically resolve differences in code between two branches that are being merged.
+-->This happens when both the branches have made changes on the same line and same file, or one branch deletes a file that other branch has modified.
+-->If you want to keep the changes on both main and any other file we have to do the edit manually and then commit the changes, in this way we can keep both the files.
+    we need to make sure to remove the marker lines while editing manually.
