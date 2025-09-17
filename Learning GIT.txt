@@ -80,3 +80,11 @@ GIT MERGE CONFLICT
 -->This happens when both the branches have made changes on the same line and same file, or one branch deletes a file that other branch has modified.
 -->If you want to keep the changes on both main and any other file we have to do the edit manually and then commit the changes, in this way we can keep both the files.
     we need to make sure to remove the marker lines while editing manually.
+
+
+GIT TIME TRAVEL 
+
+--> It has the ability to navigate, view , maipulate or change the project history.
+-->When ever we do a git commit it produces a snapshot of the project which is in hash form by using this snapshot we can go back by using command
+    git checkout <snapshot>
+--> It has the capability observing the past,reverting the past and resetting the past.
